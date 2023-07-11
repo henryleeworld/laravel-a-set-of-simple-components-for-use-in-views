@@ -15,12 +15,15 @@ return [
     |
     */
 
-    'components' => [
+    'components'  => [
         'alert'  => Components\Alert::class,
         'device' => Components\Device::class,
         'error'  => Components\Error::class,
+        'icon'   => Components\Icon::class,
         'logout' => Components\Logout::class,
         'meta'   => Components\Meta::class,
+        'submit' => Components\Submit::class,
+        'time'   => Components\Time::class,
     ],
 
     /*
@@ -33,7 +36,19 @@ return [
     | Example: [ 'fa' => storage_path('app/fontawesome') ]
     */
 
-    'icons' => [
+    'icons'       => [
 
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Date Format
+    |--------------------------------------------------------------------------
+    |
+    | The format will be used when using the time component for custom display
+    |
+    | Example: https://www.php.net/manual/en/class.datetimeinterface.php
+    */
+
+    'date-format' => 'Y-m-d H:i:s',
 ];
